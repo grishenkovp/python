@@ -67,7 +67,7 @@ df_sales['client'] = df_sales['client'].map(clients)
 #  Разделим клиентов на две группы: на тех, кто за два месяца совершил больше 10 покупок (группа А) и меньше (группа В)
 mask = df_sales['client'].value_counts().lt(10)
 df_sales['frequency_sale'] = np.where(df_sales['client'].isin(df_sales['client'].value_counts()[mask].index), 'B', 'A')
-# Разделим клиентов на группы по объему закупок за месяца:
+# Разделим клиентов на группы по объему закупок за месяц:
 df_sales = df_sales.groupby(by=['month', 'client'], as_index=False)['total_amount'].sum()
 bins = [0, 10000, 20000, 30000, 40000, np.inf]
 group_names = ['E', 'D', 'C', 'B', 'А']
