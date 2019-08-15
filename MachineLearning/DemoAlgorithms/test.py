@@ -22,7 +22,7 @@ df_sales.rename(columns={'Дата': 'date', 'Покупатель': 'customer_i
 # Определяем тип столбцов
 # print(df_sales.info())
 # Приводим столбцы к нужному типу и упорядочиваем их вывод
-df_sales['date'] = pd.to_datetime(df_sales['date'])
+df_sales['date'] = pd.to_datetime(df_sales['date'], format='%d.%m.%y %H:%M')
 df_sales['date_year'] = df_sales['date'].dt.year
 df_sales.drop(['date'], axis=1, inplace=True)
 df_sales['customer_id'] = df_sales['customer_id'].str.replace('покупатель ', 'customer ')
