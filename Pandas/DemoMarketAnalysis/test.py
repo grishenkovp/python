@@ -9,7 +9,7 @@ df_sales = pd.read_csv('D:/.../SalesByRegion.csv',
 # Определяем тип загруженных столбцов и производим необходимые замены. Столбец 'date' - даты, остальные столбцы кроме
 # 'amount' - категориальные данные
 # print(df_sales.dtypes)
-df_sales['date'] = pd.to_datetime(df_sales['date'])
+df_sales['date'] = pd.to_datetime(df_sales['date'], format='%d.%m.%Y')
 list_category ={'shop','region', 'city', 'brand', 'product'}
 for name_category in list_category:
     df_sales[name_category] = df_sales[name_category].astype('category')
