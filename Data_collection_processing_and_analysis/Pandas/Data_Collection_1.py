@@ -16,7 +16,7 @@ path = 'dataset/data1.csv'
 df = pd.read_csv(path)
 print(df)
 
-# Example 3. Чтение данных из текстового файла формата csv. Выбор выбор делителя столбцов (полей) (sep)
+# Example 3. Чтение данных из текстового файла формата csv. Выбор делителя столбцов (полей) (sep)
 path = 'dataset/data1.csv'
 df = pd.read_csv(path, sep=';')
 print(df)
