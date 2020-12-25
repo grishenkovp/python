@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_ea2ee6eedded417494b50f2cbee642e7 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_ea2ee6eedded417494b50f2cbee642e7" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_ea2ee6eedded417494b50f2cbee642e7 = L.map(
+        'map_ea2ee6eedded417494b50f2cbee642e7', {
+        center: [51.7727, 55.0988],
+        zoom: 8,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_1db8275b597c4138952a42820e865f68 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_ea2ee6eedded417494b50f2cbee642e7);
+    
+        var marker_cb927921c6c1412b981eb0c5ee514615 = L.marker(
+            [51.7727, 55.0988],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ea2ee6eedded417494b50f2cbee642e7);
+        
+    
+
+                var icon_7f0950c1c5df4f0ca95a2a9a4d6e7218 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cb927921c6c1412b981eb0c5ee514615.setIcon(icon_7f0950c1c5df4f0ca95a2a9a4d6e7218);
+            
+    
+            var popup_06f5bc84a66749b3bae67c34483e2dc7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8c4e3773170d42e59be99fa49a4c8700 = $(`<div id="html_8c4e3773170d42e59be99fa49a4c8700" style="width: 100.0%; height: 100.0%;">2500 тыс.руб</div>`)[0];
+                popup_06f5bc84a66749b3bae67c34483e2dc7.setContent(html_8c4e3773170d42e59be99fa49a4c8700);
+            
+
+            marker_cb927921c6c1412b981eb0c5ee514615.bindPopup(popup_06f5bc84a66749b3bae67c34483e2dc7)
+            ;
+
+            
+        
+    
+        marker_cb927921c6c1412b981eb0c5ee514615.bindTooltip(
+            `<div>`
+            + `Кликни по значку!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_628cbcb065e74ba5836cfd01e7f89908 = L.marker(
+            [51.20487, 58.56685],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ea2ee6eedded417494b50f2cbee642e7);
+        
+    
+
+                var icon_1995d4b2e09d465b8092424935a6b3f0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_628cbcb065e74ba5836cfd01e7f89908.setIcon(icon_1995d4b2e09d465b8092424935a6b3f0);
+            
+    
+            var popup_388d44427958431da860775b52b96e44 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_28b5af43094b472c8ac23270a191be93 = $(`<div id="html_28b5af43094b472c8ac23270a191be93" style="width: 100.0%; height: 100.0%;">1000 тыс.руб</div>`)[0];
+                popup_388d44427958431da860775b52b96e44.setContent(html_28b5af43094b472c8ac23270a191be93);
+            
+
+            marker_628cbcb065e74ba5836cfd01e7f89908.bindPopup(popup_388d44427958431da860775b52b96e44)
+            ;
+
+            
+        
+    
+        marker_628cbcb065e74ba5836cfd01e7f89908.bindTooltip(
+            `<div>`
+            + `Кликни по значку!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_75935aa7cd9b4320bb5c0fc79664119e = L.marker(
+            [52.7807, 52.2635],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ea2ee6eedded417494b50f2cbee642e7);
+        
+    
+
+                var icon_1f09c3a99947465682ac8ae6828c7c59 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_75935aa7cd9b4320bb5c0fc79664119e.setIcon(icon_1f09c3a99947465682ac8ae6828c7c59);
+            
+    
+            var popup_2c2a79717c50433d8758e4cecf4ad7d0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f57be9a9e5fd419d8e4cbfc9599a54fe = $(`<div id="html_f57be9a9e5fd419d8e4cbfc9599a54fe" style="width: 100.0%; height: 100.0%;">700 тыс.руб</div>`)[0];
+                popup_2c2a79717c50433d8758e4cecf4ad7d0.setContent(html_f57be9a9e5fd419d8e4cbfc9599a54fe);
+            
+
+            marker_75935aa7cd9b4320bb5c0fc79664119e.bindPopup(popup_2c2a79717c50433d8758e4cecf4ad7d0)
+            ;
+
+            
+        
+    
+        marker_75935aa7cd9b4320bb5c0fc79664119e.bindTooltip(
+            `<div>`
+            + `Кликни по значку!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4a6b86d3ac25430aa1fc9840e4583bdb = L.marker(
+            [51.47316, 58.4552],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ea2ee6eedded417494b50f2cbee642e7);
+        
+    
+
+                var icon_6c6e957c5ffb48cebb64cc138080f1da = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4a6b86d3ac25430aa1fc9840e4583bdb.setIcon(icon_6c6e957c5ffb48cebb64cc138080f1da);
+            
+    
+            var popup_c0d7062a48cf4e2b8444d9fea5b84178 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3d9601395623481596b54df65f113f67 = $(`<div id="html_3d9601395623481596b54df65f113f67" style="width: 100.0%; height: 100.0%;">500 тыс.руб</div>`)[0];
+                popup_c0d7062a48cf4e2b8444d9fea5b84178.setContent(html_3d9601395623481596b54df65f113f67);
+            
+
+            marker_4a6b86d3ac25430aa1fc9840e4583bdb.bindPopup(popup_c0d7062a48cf4e2b8444d9fea5b84178)
+            ;
+
+            
+        
+    
+        marker_4a6b86d3ac25430aa1fc9840e4583bdb.bindTooltip(
+            `<div>`
+            + `Кликни по значку!` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
