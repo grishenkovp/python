@@ -1,0 +1,24 @@
+#YAML
+DB:
+  USER: 'postgres'
+  PASSWORD: 'admin'
+  HOST: 'localhost'
+  PORT: 5432
+  NAME: 'test'
+
+DATA_TRANSFORM:
+  PATH: 'C:\Users\Pavel\PycharmProjects\case_etl_pipeline\data_transform'
+  ENCODING: 'UTF8'
+  COLUMNS_NAME: [ date,user_id,product,amount ]
+  SEP: ','
+  TABLE_NAME: 'sales'
+
+DATA:
+  PATH: 'C:\Users\Pavel\PycharmProjects\case_etl_pipeline\data'
+
+DATA_CONTROL:
+  PATH: 'C:\Users\Pavel\PycharmProjects\case_etl_pipeline\data_control'
+
+DATALAKE:
+  PATH: 'C:\Users\Pavel\Documents\Datalake'
+  CODE_STR: 'sales'
